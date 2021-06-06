@@ -1,12 +1,14 @@
 package webdriver;
 
-import io.github.bonigarcia.wdm.ChromeDriverManager;
-import io.github.bonigarcia.wdm.FirefoxDriverManager;
-import io.github.bonigarcia.wdm.InternetExplorerDriverManager;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
+
+import io.github.bonigarcia.wdm.managers.ChromeDriverManager;
+import io.github.bonigarcia.wdm.managers.FirefoxDriverManager;
+import io.github.bonigarcia.wdm.managers.InternetExplorerDriverManager;
 import utilities.Browser;
 
 /*
@@ -34,16 +36,16 @@ public class WebDriverFactory {
         WebDriver webDriver = null;
 
         if (CHROME.equals(browserName)) {
-            ChromeDriverManager.getInstance().setup();
+            ChromeDriverManager.chromedriver().setup();
             webDriver = new ChromeDriver();
         }
         else if (FIREFOX.equals(browserName)) {
-            FirefoxDriverManager.getInstance().setup();
+            FirefoxDriverManager.firefoxdriver().setup();
             webDriver = new FirefoxDriver();
 
         }
         else if (INTERNET_EXPLORER.equals(browserName)) {
-            InternetExplorerDriverManager.getInstance().setup();
+            InternetExplorerDriverManager.iedriver().setup();
             webDriver = new InternetExplorerDriver();
         }
         else {

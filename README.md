@@ -1,6 +1,6 @@
 # Automation UI testing framework with Selenium
 
-Example skeleton for quick start with Selenium WebDriver and TestNG.
+This project is part of Backbase Assignment with Selenium WebDriver and TestNG.
 
 ## Dependencies
 - Java
@@ -16,9 +16,5 @@ Example skeleton for quick start with Selenium WebDriver and TestNG.
 - Random generators
 - Logging with Log4j
 
-## Credits
-
-- Selenium2-Java-QuickStart-Archetype - https://github.com/sebarmeli/Selenium2-Java-QuickStart-Archetype
-- Blackbox Automated Testing Framework - https://github.com/jsonmez/BATDemo
 
 
