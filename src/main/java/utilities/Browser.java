@@ -10,7 +10,9 @@ import java.util.concurrent.TimeUnit;
  */
 public class Browser {
 
-    private static String baseUrl = PropertyLoader.loadProperty("site.url");
+	private static String urlUsername = PropertyLoader.loadProperty("site.username");
+	private static String urlPassword = PropertyLoader.loadProperty("site.password");		
+    private static String baseUrl = "https://"+urlUsername+":"+urlPassword+"@"+PropertyLoader.loadProperty("site.url");
     private static String BrowserName = PropertyLoader.loadProperty("browser.name");
     private static String BrowserVersion = PropertyLoader.loadProperty("browser.version");
     private static WebDriver webDriver;
