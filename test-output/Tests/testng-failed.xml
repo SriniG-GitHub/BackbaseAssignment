@@ -3,15 +3,15 @@
 <suite thread-count="-1" data-provider-thread-count="1" name="Failed suite [Tests]" guice-stage="DEVELOPMENT" verbose="5">
   <test name="Test1(failed)" verbose="5">
     <classes>
-      <class name="pages.HomePageTest">
+      <class name="pages.BBHomePageTest">
         <methods>
+          <include name="signUp"/>
+          <include name="deleteArticle"/>
+          <include name="driverInitialzation"/>
           <include name="tearDown"/>
-          <include name="setScreenshot"/>
-          <include name="init"/>
-          <include name="test2"/>
-          <include name="testH1Existing"/>
+          <include name="createNewPost"/>
         </methods>
-      </class> <!-- pages.HomePageTest -->
+      </class> <!-- pages.BBHomePageTest -->
     </classes>
   </test> <!-- Test1(failed) -->
 </suite> <!-- Failed suite [Tests] -->
